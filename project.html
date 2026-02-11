@@ -1,0 +1,399 @@
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>Event Registration Portal</title>
+        <link rel = "icon" type ="image/svg" href = "event.svg">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">
+                    <img src = "./icons/logo.svg">
+                </span>
+                <span class="logo-text">CLUB CLUB</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#events" class="nav-link">Events</a></li>
+                    <li><a href="#register" class="nav-link">Register</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">SUM RANDOM</span>
+                    <span class="title-line highlight">AHH EVENT</span>
+                    <span class="title-line">2026</span>
+                </h1>
+                <p class="hero-subtitle">Join us for an unforgettable experience of building, learning and improving something</p>
+                <div class="hero-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">DATE</span>
+                        <span class="meta-value">March 15, 2026</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">TIME</span>
+                        <span class="meta-value">10:00 AM - 6:00 PM</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">VENUE</span>
+                        <span class="meta-value">J-Block Mess</span>
+                    </div>
+                </div>
+            </div>
+            <div class="countdown-widget" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="events" class="event-details">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What to Expect</span>
+                <h2 class="section-title">Event Details</h2>
+            </div>
+            <div class="details-grid">
+                <div class="detail-card" data-index="1">
+                    <div class="card-icon">🗣️</div>
+                    <h3 class="card-title">Keynote Speakers</h3>
+                    <p class="card-description">Warden and Security Anna will share their knowledge and insights on why  J-Block is the best.</p>
+                </div>
+                <div class="detail-card" data-index="2">
+                    <div class="card-icon">🫂</div>
+                    <h3 class="card-title">Networking Sessions</h3>
+                    <p class="card-description">Connect with hostelmates,the cats(except the black one) and the dogs in between breaks</p>
+                </div>
+                <div class="detail-card" data-index="3">
+                    <div class="card-icon">🚽</div>
+                    <h3 class="card-title">Interactive Workshops</h3>
+                    <p class="card-description">Participate in hands-on workshops covering how to smoke, how NOT to flush and more.</p>
+                </div>
+                <div class="detail-card" data-index="4">
+                    <div class="card-icon">🤑</div>
+                    <h3 class="card-title">Competition & Prizes</h3>
+                    <p class="card-description">Showcase your skills in our running race competition with exciting prizes such as extra Tandoori piece in mess for winners.</p>
+                </div>
+            </div>
+
+            <div class="event-info-section">
+                <div class="info-column">
+                    <h3 class="info-title">Schedule Highlights</h3>
+                    <ul class="info-list">
+                        <li><strong>10:00 AM</strong> - Registration</li>
+                        <li><strong>11:00 AM</strong> - Opening Ceremony</li>
+                        <li><strong>12:00 PM</strong> - Keynote Sessions</li>
+                        <li><strong>2:00 PM</strong> - Lunch & Networking</li>
+                        <li><strong>3:00 PM</strong> - Workshop Sessions</li>
+                        <li><strong>5:00 PM</strong> - J-Block Glaze Session</li>
+                        <li><strong>6:00 PM</strong> - Closing & Awards Ceremony</li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <h3 class="info-title">What's Included</h3>
+                    <ul class="info-list">
+                        <li>Full day access to all rooms of J-Block</li>
+                        <li>Free lunch at mess</li>
+                        <li>Laundry from drying lane and kittens</li>
+                        <li>Certificate of participation</li>
+                        <li>Access to exclusive bathrooms</li>
+                        <li>Networking opportunities</li>
+                        <li>WiFi access</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="register" class="registration">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-tag">Secure Your Spot</span>
+                <h2 class="section-title">Event Registration</h2>
+                <p class="section-description">Fill out the form below to register for our upcoming event. All fields marked with * are required.</p>
+            </div>
+            <div class="progress-indicator">
+                <div class="progress-step active" data-step="1">
+                    <div class="step-circle">1</div>
+                    <span class="step-label">Personal Info</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step" data-step="2">
+                    <div class="step-circle">2</div>
+                    <span class="step-label">Contact Details</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step" data-step="3">
+                    <div class="step-circle">3</div>
+                    <span class="step-label">Preferences</span>
+                </div>
+            </div>
+            <form id="registrationForm" class="registration-form" novalidate>
+                <div class="form-step active" data-step="1">
+                    <h3 class="form-step-title">Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName" class="form-label">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" class="form-input" required>
+                            <span class="form-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="form-label">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" class="form-input" required>
+                            <span class="form-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="age" class="form-label">Age *</label>
+                            <input type="number" id="age" name="age" class="form-input" min="16" max="100" required>
+                            <span class="form-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender" class="form-label">Gender *</label>
+                            <select id="gender" name="gender" class="form-input" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="autobot">Autobots</option>
+                                <option value="tag">Redtag Anna</option>
+                                <option value="tag1">RedTag Akka</option>
+                                <option value="tag2">Dogesh</option>
+                                <option value="whatra">Sudeep</option>
+                            </select>
+                            <span class="form-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-primary" onclick="nextStep(1)">Next Step</button>
+                    </div>
+                </div>
+                <div class="form-step" data-step="2">
+                    <h3 class="form-step-title">Contact Details</h3>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" required>
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="organization" class="form-label">Organization/Institution</label>
+                        <input type="text" id="organization" name="organization" class="form-input">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="prevStep(2)">Previous</button>
+                        <button type="button" class="btn btn-primary" onclick="nextStep(2)">Next Step</button>
+                    </div>
+                </div>
+                <div class="form-step" data-step="3">
+                    <h3 class="form-step-title">Event Preferences</h3>
+                    <div class="form-group">
+                        <label for="workshop" class="form-label">Preferred Workshop *</label>
+                        <select id="workshop" name="workshop" class="form-input" required>
+                            <option value="">Select a workshop</option>
+                            <option value="run">How to Run</option>
+                            <option value="flush">Art of "Flushing"</option>
+                            <option value="design">Bathroom interiors</option>
+                            <option value="lift">Lift Technology</option>
+                            <option value="dance">Tap dance sessions</option>
+                        </select>
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="dietaryRestrictions" class="form-label">Dietary Restrictions</label>
+                        <select id="dietaryRestrictions" name="dietaryRestrictions" class="form-input">
+                            <option value="">None</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="vegan">Vegan</option>
+                            <option value="gluten-free">Gluten-free</option>
+                            <option value="halal">Halal</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments" class="form-label">Additional Comments</label>
+                        <textarea id="comments" name="comments" class="form-input" rows="4" placeholder="Any special requests or questions?"></textarea>
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">I agree to the terms and conditions *</span>
+                        </label>
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Subscribe to our newsletter for future events</span>
+                        </label>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="prevStep(3)">Previous</button>
+                        <button type="submit" class="btn btn-success">Complete Registration</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="contact-title">Get In Touch</h2>
+                    <p class="contact-description">Have questions about the event? We're here to help!</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:events@velocityclub.com">events@clubclub.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+1234567890">+91 9876543210</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>RAASENSE Spl Mess<br>J-Block, Mens Hostel, VIT UNI, Vellore</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div class="contact-details">
+                                <h4>Office Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <div class="map-overlay">
+                            <div class="map-marker">📍</div>
+                            <p class="map-text">J-Block<br>Mens Hostel, VIT UNI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">
+                            <img src = "icons/logo.svg">
+                        </span>
+                        <span class="logo-text">CLUB CLUB</span>
+                    </div>
+                    <p class="footer-tagline">Accelerating Innovation Together</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-list">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#register">Register</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Resources</h4>
+                        <ul class="footer-list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-list">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Club Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h3 class="modal-title">Registration Successful!</h3>
+            <p class="modal-message">Thank you for registering! We've sent a confirmation email to your inbox.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+        
